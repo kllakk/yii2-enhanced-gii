@@ -29,6 +29,7 @@ use kartik\grid\GridView;
     </div>
 
     <div class="row">
+        <div class="col">
 <?= "<?php \n" ?>
     $gridColumn = [
 <?php 
@@ -54,5 +55,6 @@ if ($tableSchema === false) {
         'attributes' => $gridColumn
     ]); 
 ?>
+        </div>
     </div>
 </div>
