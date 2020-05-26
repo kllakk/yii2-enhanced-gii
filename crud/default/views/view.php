@@ -30,7 +30,7 @@ $this->params['breadcrumbs'][] = $this->title;
         <div class="<?= ($generator->saveAsNew) ? "col-sm-8" : "col-sm-9";?>">
             <h2><?= "<?= " ?><?= $generator->generateString(Inflector::camel2words(StringHelper::basename($generator->modelClass))) ?>.' '. Html::encode($this->title) ?></h2>
         </div>
-        <div class="<?= ($generator->saveAsNew) ? "col-sm-4" : "col-sm-3";?>" style="margin-top: 15px">
+        <div class="<?= ($generator->saveAsNew) ? "col-sm-4" : "col-sm-3";?>">
 <?php if ($generator->pdf): ?>
 <?= "<?= " ?>
             <?= "
