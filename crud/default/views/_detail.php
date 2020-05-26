@@ -29,7 +29,7 @@ use kartik\grid\GridView;
     </div>
 
     <div class="row">
-        <div class="col">
+        <div class="col-sm-12">
 <?= "<?php \n" ?>
     $gridColumn = [
 <?php 
