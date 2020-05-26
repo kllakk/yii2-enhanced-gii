@@ -40,8 +40,8 @@ use yii\widgets\DetailView;
         ])
         ?>
     </div>
-    <?= "<?php \n" ?>
     <div class="col">
+    <?= "<?php \n" ?>
     $gridColumn = [
 <?php
     $count = 0;
