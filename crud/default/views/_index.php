@@ -40,7 +40,7 @@ use yii\widgets\DetailView;
         ])
         ?>
     </div>
-    <div class="col">
+    <div class="col-sm-12">
     <?= "<?php \n" ?>
     $gridColumn = [
 <?php
