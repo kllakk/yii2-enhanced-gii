@@ -14,7 +14,7 @@ use yii\widgets\DetailView;
     <div class="<?= ($generator->saveAsNew) ? "col-sm-7" : "col-sm-9";?>">
         <h2><?= "<?= " ?>Html::a(Html::encode($model-><?= $nameAttribute ?>), ['view', <?= $urlParams ?>]) ?></h2>
     </div>
-    <div class="<?= ($generator->saveAsNew) ? "col-sm-5" : "col-sm-3";?>" style="margin-top: 15px">
+    <div class="<?= ($generator->saveAsNew) ? "col-sm-5" : "col-sm-3";?>">
 <?php if($generator->pdf): ?>
         <?= "<?= " ?>Html::a('<i class="fa glyphicon glyphicon-hand-up"></i> ' . <?= $generator->generateString('Print PDF')?>,
             ['pdf', <?= $urlParams ?>],
@@ -41,6 +41,7 @@ use yii\widgets\DetailView;
         ?>
     </div>
     <?= "<?php \n" ?>
+    <div class="col">
     $gridColumn = [
 <?php
     $count = 0;
@@ -73,6 +74,7 @@ use yii\widgets\DetailView;
         'attributes' => $gridColumn
     ]);
     ?>
+    </div>
 </div>
 
 
